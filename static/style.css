@@ -1,0 +1,216 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(img/ladrillos.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+
+}
+
+header {
+  background-color: #9AF373;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  
+}
+
+main {
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+
+.cuadrado {
+  width: 200px;
+  height: 150px;
+  background-color:#74C94F;
+  color: #fff;
+  text-align: center;
+  margin: 10px;
+  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.cuadrado:hover{
+background-color:#589b3c ;
+}
+.cuadrado.selected {
+background-color: #9AF373;
+color: white;
+}
+
+
+.cuadrado h2 {
+  font-size: 25px;
+  
+}
+
+#cuadroCentral {
+  background-color: rgb(88, 87, 87);
+  color: #000 ;
+  text-align: center;
+  padding: 2px;
+  margin: 10px;
+  float:center; 
+  width: 90%;
+  height:100%;
+  border-radius: 10%;
+}
+
+
+form {
+  width: 600px;
+  margin: 20px auto;
+  padding: 2%;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  width: 50%;
+  height: 40px;
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  
+  
+}
+#center-button{
+
+  display: flex;
+  
+}
+.imagen {
+  display:inline;
+  margin: 0 auto;
+  height: 100%;
+  
+}
+
+.container {
+  display: flex;
+  padding-top: 1%;
+  
+  
+}
+
+.left-column {
+  width: 15%; 
+ 
+  padding-left: 1%;
+}
+
+.center-column {
+  width: 30%;
+  
+  padding-left: 1%;
+}
+
+.right-column {
+  width: 60%;
+  
+  
+
+}
+
+img {
+  width: 90%;
+  height: 100%;
+  display: block;
+}
+
+@keyframes pulse {
+0% {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.1);
+}
+100% {
+  transform: scale(1);
+}
+}
+
+.animacion-imagen {
+animation: pulse 0.5s linear;
+}
+
+
+.question {
+background-color: #74C94F; /* Color de fondo para las preguntas */
+padding: 3%;
+border-radius: 5%;
+width: 80%;
+display: inline-flex;
+flex-direction: column;
+font-weight: bold;
+
+}
+
+
+.option-button {
+display: inline-block;
+padding: 10px;
+margin: 5px;
+background-color: white;
+border: 1px solid black;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.option-button:hover {
+background-color: #7c7c7c;
+}
+
+.option-button.selected {
+background-color: #9AF373;
+color: black;
+}
+input[type="number"] {
+width: 60%; /* Ancho del campo de entrada numérica */
+
+}
+
+#Prediccion{
+
+color: white;
+text-align: center;
+}
+#respuestaDiv{
+  color: #008000;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#respuestaDiv #respuestaTexto {
+  color: green;
+font-size: 200%;
+
+}
+
+#respuestaDiv h1 {
+  color: white;
+font-size: 200%;
+
+}
+
+.textoInput { 
+
+  width: 40%;
+}

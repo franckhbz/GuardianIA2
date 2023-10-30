@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El guardián ético</title>
+  <link rel="stylesheet" href="static/style.css">
+  <script src="static/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <audio id="sound1" src="static/audio/salud.mp3"></audio>
+  <audio id="sound2" src="static/audio/claxon.mp3"></audio>
+  <audio id="sound3" src="static/audio/nature.mp3"></audio>
+  <audio id="sound4" src="static/audio/Judge.mp3"></audio>
+ 
+</head>
+<body>
+
+  <header>
+    <h1>El guardián ético</h1>
+  </header>
+
+
+  <div class="center-button" style="display: flex; flex-direction: column; align-items: center;">
+    <input type="text" id="textoInput" placeholder="Introduce una pregunta">
+    <button onclick="enviarRespuesta()">Preguntar</button>
+  </div>
+
+  <div class="container">
+
+    <div class="left-column">
+      
+      
+      <div class="cuadrado" onclick="cambiarImagen('static/img/carro.png', 'sound2');seleccionar(this);cambiarPreguntas(1)">
+        <h2>Situaciones de tráfico</h2>
+      </div>
+      
+      <div class="cuadrado" onclick="cambiarImagen('static/img/planta.png', 'sound3');seleccionar(this);cambiarPreguntas(2)">
+        <h2>Cuestiones ambientales</h2>
+      </div>
+      
+      
+      
+    </div>
+   
+    <div class="center-column">
+      <div class="square" id="cuadroCentral">
+
+        
+      </div>
+    </div>
+    
+    
+    <div class="right-column">
+      <img id="imagenGuardian" src="static/img/guardian.png" alt="Imagen del guardián ético" class="imagen">
+
+    </div>
+    
+  </div>
+  
+<!-- para el modelo 2  -->
+
+<div id="respuestaDiv">
+  <h1>Decision</h1>
+  <span id="respuestaTexto"></span>
+</div>
+
+
+
+
+</body>
+</html>
