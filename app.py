@@ -9,9 +9,6 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.preprocessing import MultiLabelBinarizer
 import logging
 
-
-
-
 try:
     # Cargar el modelo Random Forest
     rf_model = joblib.load('modelo_rf.pkl')
@@ -80,5 +77,6 @@ def handle_error(e):
     app.logger.error(f"Error al cargar modelos u objetos: {str(e)}")
     return jsonify({'error': 'Ocurrió un error en el servidor'}), 500
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
